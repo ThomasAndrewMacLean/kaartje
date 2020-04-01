@@ -22,6 +22,7 @@ const loadWensen = async () => {
     // load in images
     setTimeout(() => {
         document.querySelectorAll('img').forEach(image => {
+            image.style.height = 'auto';
             image.src = image.dataset.src;
         });
     }, 1);

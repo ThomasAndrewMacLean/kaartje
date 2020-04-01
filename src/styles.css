@@ -4,6 +4,7 @@ img {
     width: 100%;
     padding: 10px;
     border-radius: 15px;
+    height: 200px;
 }
 body {
     background: #ccf2fc;
