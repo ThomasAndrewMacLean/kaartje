@@ -1,3 +1,6 @@
+
+import "./styles.css";
+
 const loadWensen = async () => {
     const wJson = await fetch(
         'https://europe-west1-wie-is-het-264722.cloudfunctions.net/getWensen'

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+img {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+}
+body {
+    background: #ccf2fc;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    color: #444;
+    background: white;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.kader {
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px #6f96a070;
+    border-radius: 5px;
+    position: relative;
+    margin: 1rem;
+}
+
+.naam {
+    position: absolute;
+    background: #fff;
+    left: 20px;
+    top: 20px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    color: #57c6e0;
+}
+
+p {
+    padding: 10px;
+    font-family: 'Amatic SC';
+    padding-top: 0;
+    font-size: 1.5rem;
+}
