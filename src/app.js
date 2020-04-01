@@ -18,6 +18,13 @@ const loadWensen = async () => {
         wensen: shuffle(wensen.wensen)
     };
     document.querySelector('.wensen').innerHTML = template(locals);
+
+    // load in images
+    setTimeout(() => {
+        document.querySelectorAll('img').forEach(image => {
+            image.src = image.dataset.src;
+        });
+    }, 1);
 };
 
 loadWensen();
