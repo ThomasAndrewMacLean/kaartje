@@ -1,5 +1,4 @@
-
-import "./styles.css";
+import './styles.css';
 
 const loadWensen = async () => {
     const wJson = await fetch(
@@ -8,8 +7,15 @@ const loadWensen = async () => {
     const wensen = await wJson.json();
     let template = require('./wensen.pug');
 
+    function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+    }
     let locals = {
-        wensen: wensen.wensen
+        wensen: shuffle(wensen.wensen)
     };
     document.querySelector('.wensen').innerHTML = template(locals);
 };
