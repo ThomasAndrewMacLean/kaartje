@@ -2,6 +2,9 @@ ul
     each wens in wensen
         li(style="transform: rotate(" + Math.floor(Math.random() * 15 - Math.random() * 15) + "deg);")
             .kader
-                img(src=wens.Foto[0].thumbnails.small.url, data-src=wens.Foto[0].thumbnails.large.url, alt=wens.Naam)
-                span.naam @#{wens.Naam}
-                p.text #{wens.Tekst}
+                .wrapper
+                    .front
+                        img(src=wens.Foto[0].thumbnails.small.url, data-src=wens.Foto[0].thumbnails.large.url, alt=wens.Naam)
+                        span.naam @#{wens.Naam}
+                    .back
+                        p.text #{wens.Tekst}
