@@ -42,10 +42,10 @@ ul {
 }
 
 .kader {
-    width: 250px;
+    width: 300px;
     position: relative;
     margin: 1rem;
-    height: 250px;
+    height: 300px;
     perspective: 1000px;
 }
 
@@ -69,11 +69,11 @@ ul {
 .back {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    
+
     position: absolute;
     top: 0;
     left: 0;
-    height: 250px;
+    height: 300px;
     width: 100%;
     border-radius: 5px;
     box-shadow: 0px 0px 20px 0px #2c616f61;
@@ -91,7 +91,7 @@ ul {
     background-color: white;
 
     transform: rotateY(180deg);
-    
+
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
@@ -111,8 +111,8 @@ p {
     padding: 10px;
     z-index: 3;
     font-family: 'Amatic SC';
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
-canvas{
+canvas {
     pointer-events: none;
 }
