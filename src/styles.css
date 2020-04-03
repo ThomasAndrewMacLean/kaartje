@@ -2,6 +2,8 @@
 
 img {
     width: 100%;
+    height: 75%;
+    object-position: top;
     padding: 10px;
     border-radius: 15px;
     object-fit: cover;
