@@ -5,6 +5,7 @@ import './styles.css';
  var myCanvas = document.createElement("canvas");
       myCanvas.style.position = "absolute";
       myCanvas.style.top = 0;
+      myCanvas.style.zIndex= 999;
 
       myCanvas.height = window.innerHeight;
       myCanvas.width = window.innerWidth;
