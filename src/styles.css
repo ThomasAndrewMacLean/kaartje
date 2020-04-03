@@ -67,7 +67,7 @@ ul {
 .back {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    overflow: scroll;
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -89,6 +89,9 @@ ul {
     background-color: white;
 
     transform: rotateY(180deg);
+    
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 .naam {
     position: absolute;
