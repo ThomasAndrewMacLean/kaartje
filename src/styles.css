@@ -78,6 +78,7 @@ ul {
 }
 .front {
     z-index: 2;
+    overflow: hidden;
     /* for firefox 31 */
     transform: rotateY(0deg);
     background-color: white;
