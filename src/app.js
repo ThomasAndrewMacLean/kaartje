@@ -1,18 +1,5 @@
 import './styles.css';
 
-
-var fixed = document.querySelectorAll('.back').forEach(x => {
-
-x.addEventListener('touchmove', function(e) {
-
-        e.preventDefault();
-
-}, false);
-
-})
-
-
-
 // confetti
  var myCanvas = document.createElement("canvas");
       myCanvas.style.position = "absolute";
