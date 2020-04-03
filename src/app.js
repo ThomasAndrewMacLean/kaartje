@@ -1,5 +1,24 @@
 import './styles.css';
 
+
+// confetti
+ var myCanvas = document.createElement("canvas");
+      myCanvas.style.position = "absolute";
+      myCanvas.style.top = 0;
+
+      myCanvas.height = window.innerHeight;
+      myCanvas.width = window.innerWidth;
+      const x = document.getElementById("confetti");
+      x.appendChild(myCanvas);
+      var myConfetti = confetti.create(myCanvas, {
+        resize: true,
+        useWorker: true,
+      });
+      myConfetti({
+        particleCount: 100,
+        spread: 160,
+      });
+
 const loadWensen = async () => {
     const wJson = await fetch(
         'https://europe-west1-wie-is-het-264722.cloudfunctions.net/getWensen'
