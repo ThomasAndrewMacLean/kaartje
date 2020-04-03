@@ -8,10 +8,16 @@ img {
     border-radius: 15px;
     object-fit: cover;
 }
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
 body {
     background: #ccf2fc;
     font-size: 16px;
     width: 100%;
+    height: 100%;
     overflow-x: hidden;
     font-family: 'Amatic SC';
 }
