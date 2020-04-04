@@ -116,6 +116,7 @@ ul {
 }
 
 p {
+    white-space: pre-line;
     padding: 10px;
     z-index: 3;
     font-family: 'Amatic SC';
