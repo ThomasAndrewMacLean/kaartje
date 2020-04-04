@@ -17,14 +17,7 @@ myCanvas.height = window.innerHeight;
 myCanvas.width = window.innerWidth;
 const x = document.getElementById('confetti');
 x.appendChild(myCanvas);
-var myConfetti = confetti.create(myCanvas, {
-    resize: true,
-    useWorker: true
-});
-myConfetti({
-    particleCount: 100,
-    spread: 160
-});
+
 
 const loadWensen = async () => {
     const wJson = await fetch(
@@ -45,6 +38,15 @@ const loadWensen = async () => {
     };
     document.querySelector('.wensen').innerHTML = template(locals);
 
+    var myConfetti = confetti.create(myCanvas, {
+    resize: true,
+    useWorker: true
+});
+myConfetti({
+    particleCount: 100,
+    spread: 160
+});
+    
     // load in images
     setTimeout(() => {
         document.querySelectorAll('img').forEach(image => {
