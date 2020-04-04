@@ -1,23 +1,30 @@
 import './styles.css';
+const partyImage = require('./party.png');
+
+const imageUrl = document.location.origin + '/' + partyImage.default;
+console.log(imageUrl);
+document
+    .querySelector('meta[property="og:image"]')
+    .setAttribute('content', imageUrl);
 
 // confetti
- var myCanvas = document.createElement("canvas");
-      myCanvas.style.position = "absolute";
-      myCanvas.style.top = 0;
-      myCanvas.style.zIndex= 999;
+var myCanvas = document.createElement('canvas');
+myCanvas.style.position = 'absolute';
+myCanvas.style.top = 0;
+myCanvas.style.zIndex = 999;
 
-      myCanvas.height = window.innerHeight;
-      myCanvas.width = window.innerWidth;
-      const x = document.getElementById("confetti");
-      x.appendChild(myCanvas);
-      var myConfetti = confetti.create(myCanvas, {
-        resize: true,
-        useWorker: true,
-      });
-      myConfetti({
-        particleCount: 100,
-        spread: 160,
-      });
+myCanvas.height = window.innerHeight;
+myCanvas.width = window.innerWidth;
+const x = document.getElementById('confetti');
+x.appendChild(myCanvas);
+var myConfetti = confetti.create(myCanvas, {
+    resize: true,
+    useWorker: true
+});
+myConfetti({
+    particleCount: 100,
+    spread: 160
+});
 
 const loadWensen = async () => {
     const wJson = await fetch(
