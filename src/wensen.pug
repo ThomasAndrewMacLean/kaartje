@@ -7,4 +7,4 @@ ul
                         img(src=wens.Foto[0].thumbnails.small.url, data-src=wens.Foto[0].thumbnails.large.url, alt=wens.Naam)
                         span.naam @#{wens.Naam}
                     .back
-                        p.text #{wens.Tekst}
+                        p(class=wens.Tekst.length <100 ? "biggest":wens.Tekst.length <390 ? "big":wens.Tekst.length >600? "small":"") #{wens.Tekst}
