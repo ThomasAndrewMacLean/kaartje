@@ -94,6 +94,7 @@ li:first-of-type::after {
   font-size: 7rem;
   animation-name: tap;
   animation-duration: 2s;
+  pointer-events: none;
   animation-fill-mode: forwards;
   animation-delay: 2s;
   opacity: 0;
