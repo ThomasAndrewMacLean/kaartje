@@ -86,6 +86,38 @@ ul {
   border-radius: 5px;
   box-shadow: 0px 0px 20px 0px #2c616f61;
 }
+li:first-of-type::after {
+  content: "👆";
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-size: 7rem;
+  animation-name: tap;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+@keyframes tap {
+  0% {
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  99% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .front {
   z-index: 2;
   overflow: hidden;
